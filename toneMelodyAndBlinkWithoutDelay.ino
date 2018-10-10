@@ -11,12 +11,13 @@
   Revision log:
   10 October 2018 created
 
-  Based on Melody by Tom Igoe
-  Blink Without Delay by David A. Mellis
+  Based on 
+    Melody by Tom Igoe
+    Blink Without Delay by David A. Mellis
 
   This example code is in the public domain.
 
-  (this will be on my public github)
+  https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay
 */
 
 #include "pitches.h"
@@ -100,6 +101,13 @@ void loop() {
     // Record the time at which we started the current state
     currentLedStateStartedAt = currentMillis;
   }
+
+
+  /* 
+   *  Here you can put other activities and they will not be delayed
+   *  because there is no use of delay!
+   */
+  
 }
 
 void setup() {
