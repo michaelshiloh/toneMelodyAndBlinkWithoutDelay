@@ -1,18 +1,25 @@
 /*
-  Melody
 
-  Plays a melody
+ Play a melody without using delay()
 
   circuit:
-  - 8 ohm speaker on digital pin 8
+  - speaker (piezo or voice coil) on digital pin 3
 
-  created 21 Jan 2010
-  modified 30 Aug 2011
-  by Tom Igoe
+  by Michael Shiloh
+  Motivated by students in Introduction to Interactive Media, Fall 2018
+  New York University Abu Dhabi
+
+  Revision log:
+  10 October 2018 created
+
+  Based on
+    Melody by Tom Igoe
+    Blink Without Delay by David A. Mellis
 
   This example code is in the public domain.
 
-  http://www.arduino.cc/en/Tutorial/Tone
+  https://github.com/michaelshiloh/toneMelodyAndBlinkWithoutDelay
+
 */
 
 #include "pitches.h"
@@ -51,5 +58,4 @@ void loop() {
 }
 
 void setup() {
-  // no need to repeat the melody.
 }
