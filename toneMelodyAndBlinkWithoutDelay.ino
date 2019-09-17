@@ -111,5 +111,4 @@ void loop() {
 }
 
 void setup() {
-  // no need to repeat the melody.
 }
