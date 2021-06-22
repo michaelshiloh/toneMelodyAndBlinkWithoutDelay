@@ -45,7 +45,7 @@ unsigned long currentNoteStartedAt = 0;
 int thisNote = 0;
 
 // Note play time plus the pause between notes
-int millisToNextNote;
+int millisToNextNote = 0;
 
 
 /* Global variables to track blinking the LED */
