@@ -51,7 +51,7 @@ void loop() {
     pauseBetweenNotes = noteDuration * 1.30;
 
     thisNote++;
-    if ( thisNote > + 8 ) {
+    if ( thisNote >= 8 ) {
       thisNote = 0;
     }
   }
