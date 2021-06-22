@@ -79,7 +79,7 @@ void loop() {
     thisNote++;
 
     // If we reach the end of the melody start over again
-    if ( thisNote > + 8 ) {
+    if ( thisNote >= 8 ) {
       thisNote = 0;
     }
   }
