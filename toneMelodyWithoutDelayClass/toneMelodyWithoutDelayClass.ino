@@ -11,8 +11,7 @@
   New York University Abu Dhabi
 
   Revision log:
-		04 Jul 2021 - ms - created
-
+  10 October 2018 created
 
   Based on
     Melody by Tom Igoe
@@ -28,14 +27,16 @@
 #include "pitches.h"
 
 const int SPKRPIN = 9;
+
 // In some future version, perhaps the notes and durations could be provided in the constructor
+
+const int MELODYLENGTH = 8;
 // notes in the melody:
-int melody[] = {
+int melody[MELODYLENGTH] = {
   NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
 };
-
 // note values: 4 = quarter note, 8 = eighth note, etc.:
-int noteValues[] = {
+int noteValues[MELODYLENGTH] = {
   4, 8, 8, 4, 4, 4, 4, 4
 };
 
@@ -85,7 +86,7 @@ class MelodyPlayer
       }
 
       // If we've reached the end of the tune, don't do anything
-      if ( thisNote >= 8 ) {
+      if ( thisNote >= MELODYLENGTH ) {
         melodyIsPlaying = false;
         thisNote = 0; // in case we want to play again
         return;
